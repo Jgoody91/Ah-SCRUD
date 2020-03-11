@@ -14,7 +14,7 @@ var die2Count;
 var tieCount;
 
 function onStart(){
-	document.getElementById("score").innerHTML = score;
+	document.getElementById("score").innerHTML = "Points: " + score;
 	document.getElementById("high").innerHTML = score;
 	document.getElementById("total").innerHTML = localStorage.getItem("highScoreTotal");
 }
@@ -28,7 +28,7 @@ function rollDice(){
 	}
 
 	betVal = document.getElementById("bet");
-	if(betVal >> score) return;
+	if(betVal > score) return;
 
 	roll1 = Math.floor(Math.random() * 6);
     roll2 = Math.floor(Math.random() * 6);
@@ -39,7 +39,7 @@ function rollDice(){
     testDice();
 }
 function testDice(){
-	if(roll1 >> roll2){
+	if(roll1 > roll2){
 		if(bet = 1){
 			winnings = betVal * 2;
 			score += winnings;
@@ -49,7 +49,7 @@ function testDice(){
 			die1Count++;
 		}
 	}
-	if(roll2 >> roll1){
+	if(roll2 > roll1){
 		if(bet = 2){
 			winnings = betVal * 2;
 			score += winnings;
@@ -78,7 +78,7 @@ function setBars(){
 	document.getElementById("bar3").height = (die2Count / (die1Count + die2Count + tieCount)) * 300;
 }
 function updateScores(){
-	document.getElementById("score").innerHTML = score;
+	document.getElementById("score").innerHTML = "Points: " + score;
 	if(score > document.getElementById("high").innerHTML){
 		document.getElementById("high").innerHTML = score;
 	}
