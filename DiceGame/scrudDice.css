@@ -1,3 +1,63 @@
-div{
-	
+.Bar{
+    height: 300px;
 }
+#Bar1{
+    height: 200px;
+}
+
+#Bar2{
+    height: 200px;
+}
+
+#Bar3{
+    height: 200px;
+}
+
+.Check{
+	height: 100px;
+}
+
+#Check1{
+    height: 200px;
+}
+
+#Check2{
+    height: 200px;
+}
+
+#Check3{
+    height: 200px;
+}
+
+.Die{
+	height: 200px;
+}
+
+#Die1{
+    height: 200px;
+}
+
+#RollBtn{
+    height: 200px;
+}
+#Die2{
+    height: 200px;
+}
+
+.Bet{
+	height: 200px;
+}
+
+.Score{
+	height: 100px;
+}
+
+.High{
+	height: 100px;
+}
+
+.Total{
+	height: 100px;
+}
+
+
